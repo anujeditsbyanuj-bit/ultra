@@ -637,7 +637,7 @@ async def help_handler(client: Client, m: Message):
 ABOUT_TEXT = (
     f"💠 {smallcaps('About This Bot')} 💠\n\n"
     f"╭────[ ✨ {smallcaps('Anuj')} ]────⍟\n"
-    f"├⍟ 🚀 {smallcaps('Bot Name')}  : <a href=\"https://t.me/AK_Img_to_link_bot\">{smallcaps('Diskwala Downloader Bot')}</a>\n"
+    f"├⍟ 🚀 {smallcaps('Bot Name')}  : <a href=\"https://t.me/diskwala_downloaderr_bot\">{smallcaps('Diskwala Downloader Bot')}</a>\n"
     f"├⍟ 👨‍💻 {smallcaps('Developer')}  : <a href=\"https://t.me/anujedits97\">{smallcaps('Anuj Kumar')}</a>\n"
     f"├⍟ 🔗 {smallcaps('Library')}  : <a href=\"https://docs.pyrogram.org/\">{smallcaps('Pyrogram Async')}</a>\n"
     f"├⍟ ⚡️ {smallcaps('Language')}  : <a href=\"https://www.python.org/\">{smallcaps('Python')} 3.11+</a>\n"
