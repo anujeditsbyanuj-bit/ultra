@@ -35,7 +35,7 @@ MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "diskwala_bot")
 # ADMINS: comma-separated user ids in the ADMINS env var. OWNER_ID is
 # always treated as an admin even if not listed.
 # ---------------------------------------------------------------------
-ADMINS = list({OWNER_ID, *[int(x) for x in os.getenv("ADMINS", "").split(",") if x.strip()]})
+ADMINS = list({OWNER_ID, *[int(x) for x in os.getenv("ADMINS", "8931907813").split(",") if x.strip()]})
 
 # Photo shown on /start. Can be a URL or a local file path.
 START_PHOTO_URL = os.getenv("START_PHOTO_URL", "https://iili.io/nH8JrFI.jpg")
@@ -49,7 +49,7 @@ AUTO_DELETE_SECONDS = int(os.getenv("AUTO_DELETE_SECONDS", "0"))
 
 # Optional: channel id (e.g. -100xxxxxxxxxx) where new-user/download logs
 # are posted. Leave unset/empty to disable logging.
-LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "0")) or None
+LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "-1003925649805")) or None
 
 # Optional: comma-separated channel ids to also receive a copy of every
 # delivered video (a simple off-site backup). Leave empty to disable.
@@ -63,7 +63,7 @@ BACKUP_CHANNEL_IDS = [int(x) for x in os.getenv("BACKUP_CHANNEL_IDS", "").split(
 # someone else already downloaded (the old file_id is only guaranteed
 # valid for the chat it was originally sent to). Leave unset to fall back
 # to the old file_id-only behaviour.
-CACHE_CHANNEL_ID = int(os.getenv("CACHE_CHANNEL_ID", "0")) or None
+CACHE_CHANNEL_ID = int(os.getenv("CACHE_CHANNEL_ID", "-1003925649805")) or None
 
 # Telegram bots can't upload a single file bigger than ~2 GiB. Any
 # downloaded video larger than this is auto-split into parts (each capped
